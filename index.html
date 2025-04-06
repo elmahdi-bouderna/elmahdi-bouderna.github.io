@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Mahdi Bouderna | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="rtl-styles.css">
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <div class="lang-option active" data-lang="en"><img src="https://flagcdn.com/48x36/gb.png" alt="English"></div>
+        <div class="lang-option" data-lang="fr"><img src="https://flagcdn.com/48x36/fr.png" alt="Français"></div>
+        <div class="lang-option" data-lang="ar"><img src="https://flagcdn.com/48x36/ma.png" alt="العربية"></div>
+    </div>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <ul>
+            <li><a href="#home" class="active"><i class="fas fa-home"></i><span class="tooltip">Home</span></a></li>
+            <li><a href="#about"><i class="fas fa-user"></i><span class="tooltip">About</span></a></li>
+            <li><a href="#education"><i class="fas fa-graduation-cap"></i><span class="tooltip">Education</span></a></li>
+            <li><a href="#projects"><i class="fas fa-code-branch"></i><span class="tooltip">Projects</span></a></li>
+            <li><a href="#skills"><i class="fas fa-tools"></i><span class="tooltip">Skills</span></a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i><span class="tooltip">Contact</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Header & Hero Section -->
+    <header id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="name-block">
+                    <h1 class="glitch" data-text="EL MAHDI BOUDERNA" data-translate="full-name">EL MAHDI BOUDERNA</h1>
+                    <div class="title-animation">
+                        <span class="txt-rotate" data-period="2000" data-rotate='["Web Developer", "Software Engineer", "IT Student"]'></span>
+                    </div>
+                </div>
+                <p class="hero-description" data-translate="hero-description">Transforming ideas into digital reality</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="primary-btn" data-translate="cta-contact">Get in Touch</a>
+                    <a href="#projects" class="secondary-btn" data-translate="cta-projects">View My Work</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="code-snippet">
+                    <pre><code>
+class <span class="highlight">Developer</span> {
+  constructor() {
+    this.name = "El Mahdi Bouderna";
+    this.role = "Software Developer";
+    this.location = "Morocco";
+    this.languages = ["Java", "JavaScript", "PHP", "SQL"];
+  }
+  
+  sayHello() {
+    console.log("Welcome to my portfolio!");
+  }
+}
+
+const me = new Developer();
+me.sayHello();
+                    </code></pre>
+                </div>
+                <div class="geometric-elements">
+                    <div class="geo-element"></div>
+                    <div class="geo-element"></div>
+                    <div class="geo-element"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        I'm a student pursuing a degree in Information Systems and Digital Transformation at the Faculty of Sciences and Technologies in Settat. I'm passionate about digital innovation, particularly Web 3.0 and blockchain technologies. Currently seeking an internship starting April 2025 to apply my skills and gain enriching professional experience.
+                    </p>
+                    <ul class="about-details">
+                        <li><i class="fas fa-map-marker-alt"></i> Morocco</li>
+                        <li><i class="fas fa-envelope"></i> bouderna.elmahdi@gmail.com</li>
+                        <li><i class="fab fa-linkedin"></i> elmahdi-bouderna</li>
+                        <li><i class="fas fa-phone"></i> +212 614 094 346</li>
+                    </ul>
+                    <div class="about-cta">
+                        <a href="#" class="download-btn"><i class="fas fa-download"></i> Download CV</a>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="profile-card">
+                        <div class="profile-photo-container">
+                            <div class="profile-photo-wrapper">
+                                <div class="profile-photo"></div>
+                            </div>
+                        </div>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <span class="stat-value">2+</span>
+                                <span class="stat-label" data-translate="stat-years">Years Experience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">10+</span>
+                                <span class="stat-label" data-translate="stat-projects">Projects</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">3</span>
+                                <span class="stat-label" data-translate="stat-languages">Languages</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>LST - Information Systems and Digital Transformation</h3>
+                            <span class="date">2024 - Present</span>
+                        </div>
+                        <p>University Hassan I, Faculty of Sciences and Technologies of Settat (FSTS)</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Diploma of Scientific and Technical University Studies</h3>
+                            <span class="date">2021 - 2024</span>
+                        </div>
+                        <p>University Hassan I, Faculty of Sciences and Technologies of Settat (FSTS)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Academic Projects</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>E-commerce Website</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">Development of a platform with user management, order processing, and payment simulation.</p>
+                    <div class="tech-stack">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Employee Management System</h3>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">Desktop application for tracking productivity and managing employees.</p>
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>JavaFX</span>
+                        <span>MySQL</span>
+                        <span>JDBC</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>IoT RFID Attendance Management System</h3>
+                        <div class="project-links">
+                            <a href="https://github.com/elmahdi-bouderna/SCOLAMM" class="project-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <p class="project-description">comprehensive IoT-based attendance tracking system that uses RFID technology to automate and streamline classroom attendance recording.</p>
+                    <div class="tech-stack">
+                        <span>Node.js</span>
+                        <span>WebSocket</span>
+                        <span>MySQL</span>
+                        <span>PHP</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>Chart.js</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item" data-progress="85">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-item" data-progress="80">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item" data-progress="75">
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <span class="skill-name">PHP</span>
+                        </div>
+                        <div class="skill-item" data-progress="70">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span class="skill-name">SQL</span>
+                        </div>
+                        <div class="skill-item" data-progress="70">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="skill-item" data-progress="65">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <span class="skill-name">CSS</span>
+                        </div>
+                        <div class="skill-item" data-progress="60">
+                            <div class="skill-icon">C</div>
+                            <span class="skill-name">C</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+                            <span class="skill-name">Bootstrap</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <span class="skill-name">Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <span class="skill-name">jQuery</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <span class="skill-name">Express.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <span class="skill-name">JavaFX</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                            <span class="skill-name">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>Tools & Environments</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-github"></i></div>
+                            <span class="skill-name">GitHub</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <span class="skill-name">VS Code</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-java"></i></div>
+                            <span class="skill-name">Eclipse</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <span class="skill-name">XAMPP</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span class="skill-name">phpMyAdmin</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                            <span class="skill-name">AstahUML</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-desktop"></i></div>
+                            <span class="skill-name">VMware</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                            <span class="skill-name">Odoo</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-microchip"></i></div>
+                            <span class="skill-name">Arduino</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="languages-soft-skills">
+                    <div class="skills-category">
+                        <h3>Languages</h3>
+                        <div class="language-items">
+                            <div class="language-item">
+                                <span class="language-name">Arabic</span>
+                                <span class="language-level">Native</span>
+                                <div class="language-bar">
+                                    <div class="language-progress" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">French</span>
+                                <span class="language-level">intermediate</span>
+                                <div class="language-bar">
+                                    <div class="language-progress" style="width: 40%"></div>
+                                </div>
+                            </div>
+                            <div class="language-item">
+                                <span class="language-name">English</span>
+                                <span class="language-level">intermediate</span>
+                                <div class="language-bar">
+                                    <div class="language-progress" style="width: 60%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>Soft Skills</h3>
+                        <div class="soft-skills-list">
+                            <div class="soft-skill">
+                                <i class="fas fa-brain"></i>
+                                <span>Problem Solving</span>
+                            </div>
+                            <div class="soft-skill">
+                                <i class="fas fa-users"></i>
+                                <span>Teamwork</span>
+                            </div>
+                            <div class="soft-skill">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>Adaptability</span>
+                            </div>
+                            <div class="soft-skill">
+                                <i class="fas fa-book-reader"></i>
+                                <span>Fast Learning</span>
+                            </div>
+                            <div class="soft-skill">
+                                <i class="fas fa-search"></i>
+                                <span>Analytical Thinking</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Feel free to reach out for collaboration opportunities or just to say hello!</p>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>bouderna.elmahdi@gmail.com</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+212 614 094 346</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <p>elmahdi-bouderna</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="https://github.com/elmahdi-bouderna" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/el-mahdi-bouderna-86016b174/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://x.com/mehdikaw025" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/mehdi_bouderna?igsh=MWQ4YzZ2NW1id2dwbg==" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <!-- Replace your existing submit button with this -->
+                        <button type="submit" class="submit-btn">
+                            <i class="fab fa-whatsapp"></i> <span data-translate="form-submit">Send Message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>EB</h3>
+                    <p>El Mahdi Bouderna</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/elmahdi-bouderna" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/el-mahdi-bouderna-86016b174/" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://x.com/mehdikaw025" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/mehdi_bouderna?igsh=MWQ4YzZ2NW1id2dwbg==" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 El Mahdi Bouderna. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
