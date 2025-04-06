@@ -797,3 +797,52 @@ if (window.matchMedia('(max-width: 768px)').matches) {
         }
     });
 }
+
+// CV download functionality - Add this to your script.js file
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the download button
+    const downloadBtn = document.getElementById('cv-download-btn');
+    
+    if (downloadBtn) {
+        // Update CV link based on selected language
+        function updateCVLink() {
+            const currentLang = localStorage.getItem('selectedLanguage') || 'en';
+            downloadBtn.setAttribute('href', `cv_${currentLang}.pdf`);
+        }
+        
+        // Initial update
+        updateCVLink();
+        
+        // Update when language changes
+        document.querySelectorAll('.lang-option').forEach(option => {
+            option.addEventListener('click', function() {
+                // Wait a bit for the language to be updated in localStorage
+                setTimeout(updateCVLink, 100);
+            });
+        });
+        
+        // Track CV downloads
+        downloadBtn.addEventListener('click', function(e) {
+            // Log download event (this could be replaced with analytics code if needed)
+            console.log('CV Downloaded in ' + (localStorage.getItem('selectedLanguage') || 'en'));
+            
+            // If you want to delay the download to show a message:
+            /*
+            e.preventDefault();
+            const currentLang = localStorage.getItem('selectedLanguage') || 'en';
+            const messages = {
+                en: 'Downloading your CV...',
+                fr: 'Téléchargement de votre CV...',
+                ar: 'جاري تحميل سيرتك الذاتية...'
+            };
+            
+            alert(messages[currentLang]);
+            
+            // Then trigger download after a short delay
+            setTimeout(() => {
+                window.location.href = downloadBtn.getAttribute('href');
+            }, 500);
+            */
+        });
+    }
+});
